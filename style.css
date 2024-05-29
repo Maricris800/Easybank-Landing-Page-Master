@@ -1,0 +1,702 @@
+:root{  
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--Very-Light-Gray);    
+    background-image: url(./images/bg-intro-desktop.svg);    
+    background-size: 70vw;
+    background-repeat: no-repeat;
+    background-position-x: 35rem;
+    background-position-y: -90px;        
+}
+
+header{
+    display: flex; 
+    align-items: center;
+    justify-content: center;    
+    align-items: center;     
+    background-color: var(--White);        
+    width: auto;
+    height: 90px;
+    margin-bottom: 20px;    
+}
+
+.navBarra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;    
+    height: 90px;
+    margin-top: 40px;
+    margin-bottom: 20px;        
+}
+
+.divLogo{    
+    margin-left: -100px;
+}
+
+.divUlNavBar{
+    display: flex;
+    margin-left: 15px;
+}
+
+.ulNavBar{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin-left: 160px;    
+}
+
+.liNavBar{
+    margin-left: 35px;
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.liNavBar:hover{
+    cursor: pointer;
+    color: var(--Dark-Blue);    
+    -webkit-box-shadow: 0px 5px 1px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 1px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 1px -1px rgba(0,0,0,0.75);
+}
+
+.responsive{
+    display: none;
+}
+
+.divButtonNavBar{    
+    margin-left: 210px;
+}
+
+.buttonNavBar{
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    margin-top: -10px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--White);
+    background-image: linear-gradient(
+    270deg,
+    hsl(228deg 60% 74%) 0%,
+    hsl(212deg 83% 69%) 9%,
+    hsl(200deg 95% 57%) 18%,
+    hsl(195deg 100% 49%) 26%,
+    hsl(191deg 100% 47%) 33%,
+    hsl(186deg 100% 44%) 39%,
+    hsl(178deg 100% 41%) 48%,
+    hsl(168deg 100% 41%) 65%,
+    hsl(157deg 100% 41%) 82%,
+    hsl(136deg 65% 51%) 100%
+    );
+}
+
+.buttonNavBar:hover{
+    cursor: pointer;
+}
+
+.divMenuResponsive{
+    display: none;
+}
+
+.firstSection{
+    display: flex;    
+    width: 900px;
+    height: 500px;
+}
+
+.divFirstSectionOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    gap: 25px;
+    width: auto;
+    height: 500px;
+}
+
+.divFirstSectionOne h1{
+    margin-left: 45px;
+    font-size: 3rem;
+    width: 450px;    
+}
+
+.divFirstSectionOne p{
+    margin-left: 45px;
+    font-size: 18px;
+    color: var(--Grayish-Blue);
+    width: 450px;
+}
+
+.divFirstSectionOne button{    
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    margin-left: -250px;    
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--White);
+    background-image: linear-gradient(
+    270deg,
+    hsl(228deg 60% 74%) 0%,
+    hsl(212deg 83% 69%) 9%,
+    hsl(200deg 95% 57%) 18%,
+    hsl(195deg 100% 49%) 26%,
+    hsl(191deg 100% 47%) 33%,
+    hsl(186deg 100% 44%) 39%,
+    hsl(178deg 100% 41%) 48%,
+    hsl(168deg 100% 41%) 65%,
+    hsl(157deg 100% 41%) 82%,
+    hsl(136deg 65% 51%) 100%
+    );
+}
+
+.divFirstSectionOne button:hover{
+    cursor: pointer;    
+}
+
+.imgFirstSection{    
+    margin-left: 140px;
+    width: 600px;
+    height: 650px;
+}
+
+.secondSection{
+    display: flex;
+    flex-direction: column;    
+    width: auto;
+    height: 500px;
+    background-color: var(--Light-Grayish-Blue);    
+}
+
+.mainDivSecondSection{
+    display: flex;
+    flex-direction: column;
+    margin:65px 5px 20px 80px;
+    gap: 20px;       
+}
+
+.mainDivSecondSection h2{
+    font-size: 2rem;
+}
+
+.mainDivSecondSection p{
+    font-size: 16px;
+    width: 520px;
+    height: 20px;
+    color: var(--Grayish-Blue);
+    font-weight: bold;
+}
+
+.boxesSecondSection{
+    display: flex;
+    justify-content: space-around;    
+    flex-direction: row;
+    margin:50px 20px 20px 60px;   
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 250px;
+    height: 250px;
+}
+
+.boxes img{
+    width: 60px;
+    height: 60px;
+}
+
+.boxes h4{
+    font-size: 18px;    
+}
+
+.boxes p{
+    font-size: 16px;
+    color: var(--Grayish-Blue);
+    font-weight: bold;
+}
+
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 20px 0px 60px; 
+}
+
+.thirdSection h2{
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 2rem;
+}
+
+.mainDivThirdSection{
+    display: flex;    
+    flex-direction: row;         
+    width: auto;
+    height: 400px;
+    margin-top: 60px;
+    margin-bottom: 60px;          
+}
+
+.articles{
+    display: flex;    
+    flex-direction: column;
+    gap: 25px;
+    width: 250px;
+    height: 250px;
+    margin-right: 45px;
+    margin-bottom: 30px;     
+}
+
+.divThirdSectionOne{
+    margin-left: 30px;
+}
+
+.articles img{
+    display: flex;    
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.articles h5{
+    font-size: 24px;
+}
+
+.articles p{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Grayish-Blue);
+}
+
+.articles h5:hover{ 
+    cursor: pointer;
+    color: var(--Grayish-Blue);
+}
+
+footer{
+    display: flex;
+    background-color: var(--Dark-Blue);
+    width: auto;
+    height: 250px;    
+}
+
+.imgFooter{
+    margin-top:70px;
+    margin-left: 90px;    
+}
+
+.imgRedesSociales{
+    margin-top:50px;
+    margin-left: -15px;    
+}
+
+.logosRedesSociales{   
+    margin-top: 5px;
+    margin-left: 10px;    
+}
+
+.logosRedesSociales:hover{
+    cursor: pointer;
+    background-color: var(--Lime-Green);
+}
+
+.ulFooter{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    margin-left: 200px;    
+}
+
+.ulFooterOne{
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--Grayish-Blue);    
+}
+
+.ulFooterTwo{
+    margin-left: 100px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--Grayish-Blue);    
+}
+
+.liFooter{
+    margin-bottom: 20px;    
+}
+
+.liFooter:hover{
+    cursor: pointer;
+    color: var(--Lime-Green);
+}
+
+.divButtonFooter{
+    margin-top: 70px;
+    margin-left: 250px;    
+}
+
+.buttonFooter{
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 30px;        
+    font-size: 18px;
+    font-weight: bolder;
+    color: var(--White);
+    background-image: linear-gradient(
+    270deg,
+    hsl(228deg 60% 74%) 0%,
+    hsl(212deg 83% 69%) 9%,
+    hsl(200deg 95% 57%) 18%,
+    hsl(195deg 100% 49%) 26%,
+    hsl(191deg 100% 47%) 33%,
+    hsl(186deg 100% 44%) 39%,
+    hsl(178deg 100% 41%) 48%,
+    hsl(168deg 100% 41%) 65%,
+    hsl(157deg 100% 41%) 82%,
+    hsl(136deg 65% 51%) 100%
+    );
+}
+
+.buttonFooter:hover{
+    cursor: pointer;       
+}
+
+.pFooter{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--Grayish-Blue);
+    margin-left: -60px;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        background-color: var(--Very-Light-Gray);    
+        background-image: url(./images/bg-intro-desktop.svg);    
+        background-size: 150vw;
+        background-repeat: no-repeat;
+        background-position-x: 1rem;
+        background-position-y: 90px;        
+    }
+
+    header{             
+        background-color: var(--White);               
+        width: auto;
+        height: 90px;
+        margin-bottom: 20px;    
+    }
+
+    .navBarra{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction: row;
+        width: auto;    
+        height: 90px;
+        margin-top: 30px;
+        margin-bottom: 30px;        
+    }
+    
+    .divLogo{    
+        margin-left: 5px;
+    }
+
+    .imgLogo{
+        width: 145px;
+        height: 30px;
+    }    
+        
+    .liNavBar{
+        display: none;
+    }    
+        
+    .divButtonNavBar{ 
+        display: none;  
+    }    
+    
+    .divMenuResponsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -75px;               
+    }
+
+    .imgMenuResponsive{
+        margin: 5px;
+        width: 25px;
+        height: 20px;
+    }
+
+    .firstSection{
+        display: flex;
+        flex-direction: column-reverse;  
+        width: auto;
+        height: 750px;       
+    }
+
+    .imgFirstSection{
+        margin-left: 16px;    
+        margin-top: 5px;
+        margin-bottom: -25px;
+        width: auto;
+        height: 410px;
+    }
+
+    .divFirstSectionOne{        
+        margin-left: 10px;
+        margin-bottom: 30px;
+        gap: 30px;
+        width: auto;
+        height: 500px;
+    }
+
+    .divFirstSectionOne h1{
+        margin-left: 43px;
+        font-size: 2.5rem;
+        width: auto;    
+    }
+    
+    .divFirstSectionOne p{
+        margin-left: 5px;
+        margin-right: 15px;
+        font-size: 18px;
+        text-align: center;        
+        width: auto;
+    }
+    
+    .divFirstSectionOne button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: -5px;    
+        width: 180px;
+        height: 50px;
+        
+    }
+
+    .menuResponsive{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 340px;
+        height: 420px;
+        background: var(--Grayish-Blue);
+        color: white;
+        border-radius: 10px;  
+        margin-top: 500px;
+        margin-left: -25px;        
+        padding: 15px;
+           
+    }
+
+    .menuResponsive li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        margin-top: 30px; 
+        font-size: 18px;       
+        font-weight: bolder;        
+    }
+
+    .secondSection{
+        display: flex;
+        flex-direction: column;    
+        width: auto;
+        height: 1300px;
+        background-color: var(--Light-Grayish-Blue);    
+    }
+
+    .mainDivSecondSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainDivSecondSection h2{
+        font-size: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+    }
+    
+    .mainDivSecondSection p{        
+        width: auto;
+        height: 60px;
+        margin-left: -62px;        
+        text-align: center;        
+    }
+
+    .boxesSecondSection{
+        display: flex;            
+        flex-direction: column;
+        margin: 25px 30px 25px 45px;
+        width: auto;
+        
+    }
+
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: auto;
+        height: 250px;
+    }
+
+    .boxes h4{
+        font-size: 1.5rem;
+        margin-left: 70px;    
+    }
+
+    .boxes img{
+        margin-left: 110px;        
+    }    
+    
+    .boxes p{              
+        width: auto;
+        height: 60px;
+    }
+
+    .thirdSection {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px 20px 20px;
+        width: auto;
+        height: 2100px; 
+    }
+    
+    .thirdSection h2{
+        margin-top: 25px;
+        margin-left: 65px;
+        font-size: 2.25rem;
+    }
+    
+    .mainDivThirdSection{
+        display: flex;    
+        flex-direction: column;         
+        width: auto;
+        height: 1200px;
+        margin-top: 60px;
+        margin-bottom: 60px;          
+    }
+    
+    .articles{
+        display: flex;    
+        flex-direction: column;
+        gap: 35px;
+        width: auto;
+        height: 600px;
+        margin-left: 30px;
+        margin-right: 35px;
+        margin-bottom: 50px;     
+    }
+    
+    
+    .articles img{
+        display: flex;    
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+    
+    .articles h5{
+        font-size: 28px;
+    }
+    
+    .articles p{
+        font-size: 16px;
+       
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 900px;    
+    }
+    
+    .imgFooter{
+        margin-top:70px;
+        margin-left: 100px;    
+    }
+    
+    .imgRedesSociales{
+        width: 250px;
+        margin-top: 40px;
+        margin-left: -35px;    
+    }
+
+    .logoFooter{
+        width: 160px;
+        height: 40px; 
+    }
+    
+    .logosRedesSociales{   
+        margin-top: 5px;
+        margin-left: 15px;
+        width: 25px;
+        height: 25px;    
+    }     
+    
+    .ulFooter{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 60px;   
+    }
+    
+    .ulFooterOne{        
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 90px;            
+    }
+    
+    .ulFooterTwo{
+        margin-left: 90px;        
+        font-size: 20px;         
+    }
+    
+    .liFooter{
+        margin-bottom: 35px;    
+    }
+    
+       
+    .divButtonFooter{
+        margin-top: 70px;
+        margin-left: 130px;    
+    }
+    
+    .buttonFooter{
+        width: 180px;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        margin-left: -30px;         
+    } 
+    
+}
